@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Identity;
 
 namespace WebBanHang.Models
 {
-    public class ApplicationDbContext:IdentityDbContext<IdentityUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-          
+
         }
         public DbSet<Category> Categories { set; get; }
         public DbSet<Product> Products { set; get; }

@@ -62,22 +62,7 @@ $(".btnPhoneSearch").click(function (evt) {
 
 })
 
-//$(".btnremove").click(function (evt) {
-//    evt.preventDefault();
-//    let id = $(this).attr("data-productID")
-//    $.ajax({
-//        url: "/Customer/Cart/DeleteAPI",
-//        data: { "productID": id},
-//        success: function (data) {
-//            Swal.fire({
-//                title: data.msg,
-//                text: "Xoá sản phẩm thành công",
-//                icon: "success"
-//            });
-//            showTotalPrice();
-//        }
-//    })
-//})
+
 
 
 let showTotalPrice = () => {
@@ -100,5 +85,5 @@ let showQuantityCart = () => {
             $(".showcart").text(data.qty)
         }
     })
-   // alert(id);
+  
 }
